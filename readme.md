@@ -267,6 +267,14 @@ git log --oneline --graph --all
 ``` bash
 git config --global alias.l 'log --oneline --graph --all'
 ```
+Настроить короткую комманду для красивого лога:
+``` bash
+git config --global alias.l "log --pretty=format:'%C(yellow)%h %C(dim green)%cd %C(reset)|%C(#F78972)%d %C(cyan)%s %C(#9aedf1)[%an]'"
+```
+Настроить короткую дату:
+``` bash
+git config --global log.date short
+```
 
 
 ``` bash
