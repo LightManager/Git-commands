@@ -259,6 +259,16 @@ git mv readme_new.md folder/ # переместить файл readme_new.md в 
 
 Выход из длинного лога вывода: `q`.
 
+Показать лог всех веток в графическом режиме:
+``` bash
+git log --oneline --graph --all
+```
+Настроить короткую комманду для лога:
+``` bash
+git config --global alias.l 'log --oneline --graph --all'
+```
+
+
 ``` bash
 git log master             # показать коммиты в указанной ветке
 git log -2                 # показать последние 2 коммита в активной ветке
